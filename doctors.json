@@ -1,0 +1,16 @@
+[
+  {"id": 1,
+  "imgUrl": "../doctor-male.png",
+  "name": "Dr. Noam Scarpese",
+  "streetAddress": "1122 Somewhere Street",
+  "city": "New York",
+  "state": "NY",
+  "zipCode": "11215"},
+  {"id": 2,
+  "imgUrl": "../doctor-female.png",
+  "name": "John SomeGuy",
+  "streetAddr": "999 Otherplace Street",
+  "city": "Staten Island",
+  "state": "NY",
+  "zipCode": "11215" }
+  ]

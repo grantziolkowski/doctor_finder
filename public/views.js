@@ -1,3 +1,3 @@
-App.Views.Index = Backbone.View.extend({
+App.Views.Doctors = Backbone.View.extend({
 
 })

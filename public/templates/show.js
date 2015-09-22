@@ -1,6 +1,6 @@
 JST['templates/show'] = _.template(
   "<div class='row' class='doctor_name'>\
-    <div class='col-med-1'>\
+    <div class='col-med-12'>\
       <img class='img-circle' src=<%= imgUrl %>>\
     </div>\
     <div class='col-xs-6'>\

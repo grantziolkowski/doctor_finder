@@ -1,7 +1,9 @@
 JST['templates/show'] = _.template(
   "<div class='row border doctor_item'>\
-    <%= index %>\
-    <div class='col-med-12'>\
+    <div class='col-xs-1 doctor_counter'>\
+      <%= index %>.\
+    </div>\
+    <div class='col-xs-1'>\
       <img class='img-circle' src=<%= imgUrl %>>\
     </div>\
     <div class='col-xs-6'>\

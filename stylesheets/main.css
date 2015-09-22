@@ -2,6 +2,7 @@ body {
   font-size: 1.5em;
   counter-reset: my-badass-counter;
 }
+
 ul {
   list-style: none;
 }
@@ -18,4 +19,8 @@ img {
   padding: 15px;
   border: 3px solid black;
   border-radius: 2px;
+}
+
+.doctor_counter {
+  top: 20px;
 }

@@ -1,8 +1,11 @@
+public/lib/jquery.js
+public/lib/underscore.js
+public/lib/backbone.js
+public/app.js
 public/templates/map.js
 public/templates/nav.js
 public/templates/show.js
-public/app.js
 public/models.js
 public/routers.js
 public/views.js
-test/test.js
+test/spec/doctor_finder.spec.js

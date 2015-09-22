@@ -5,7 +5,7 @@ App.Routers.Index = Backbone.Router.extend({
   root: function() {
     var doctors = new App.Models.Doctors()
     doctors.fetch().then(function() {
-      var indexView = App.Views.Doctors({collection: doctors})
+      var indexView = new App.Views.Doctors({collection: doctors})
     })
   }
 

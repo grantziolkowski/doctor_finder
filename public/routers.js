@@ -1,4 +1,7 @@
 App.Routers.Index = Backbone.Router.extend({
+  initialize: function(options) {
+    this.$el = options.container
+  },
   routes: {
     ""    : "root"
   },

@@ -15,12 +15,12 @@ ul {
 
 #map {
   display: block;
-  border: 25px solid #ADD8E6;
+  border: 30px solid #ADD8E6;
   border-radius: 3px;
   outline: black solid 3px;
   padding: 0;
   margin-left: 3px;
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 #map img {

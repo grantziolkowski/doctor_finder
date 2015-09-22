@@ -16,7 +16,7 @@ App.Views.DoctorListView = Backbone.View.extend({
 })
 
 App.Views.DoctorListItemView = Backbone.View.extend({
-  tagName: "li",
+  tagname: "li",
   template: JST['templates/show'],
   render: function() {
     var model = this.model.toJSON()

@@ -1,0 +1,14 @@
+{
+  "framework": "mocha",
+  "src_files": [
+    "public/lib/jquery.min.js",
+    "public/lib/underscore-min.js",
+    "public/lib/backbone-min.js",
+    "public/*.js",
+    "test/lib/chai.js",
+    "test/lib/sinon-chai.js",
+    "test/lib/sinon-1.9.0.js",
+    "test/test.js",
+    "test/spec/*.js"
+  ]
+}

@@ -7,6 +7,8 @@ App.Routers.Index = Backbone.Router.extend({
   },
   root: function() {
     var self = this
+    var nav = new App.Views.NavView()
+    this.$el.append(nav.render().el)
     var doctors = new App.Models.Doctors()
     doctors.fetch().then(function() {
       var doctorsView = new App.Views.DoctorListView({collection: doctors})

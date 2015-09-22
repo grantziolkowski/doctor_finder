@@ -6,7 +6,7 @@ JST['templates/show'] = _.template(
     <div class='col-xs-1'>\
       <img class='img-circle' src=<%= imgUrl %>>\
     </div>\
-    <div class='col-xs-6'>\
+    <div class='col-xs-8'>\
       <ul class='doctor_info'>\
         <li><%= name %></li>\
         <li><%= streetAddress %></li>\

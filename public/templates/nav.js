@@ -1,4 +1,3 @@
 JST['templates/nav'] = _.template(
-  "<div>/
-  <div>"
+  "<h4>Doctor Finder</h4>"
   )

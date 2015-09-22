@@ -9,7 +9,7 @@
   {"id": 2,
   "imgUrl": "../doctor-female.png",
   "name": "John SomeGuy",
-  "streetAddr": "999 Otherplace Street",
+  "streetAddress": "999 Otherplace Street",
   "city": "Staten Island",
   "state": "NY",
   "zipCode": "11215" }

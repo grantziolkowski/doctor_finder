@@ -4,6 +4,8 @@ window.App = {
     Views: {}
  }
 
+window.JST = {} //templates
+
 $(document).ready(function(){
     window.router = new App.Routers.Index({
       container: $('.container')

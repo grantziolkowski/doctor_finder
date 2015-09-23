@@ -57,9 +57,30 @@ describe("App.Models.Doctors", function () {
 
   describe("creation", function () {
 
-    it("has default values", function () {
-      expect(this.doctors).to.be.ok;
-      expect(this.doctors).to.have.length(0);
-    });
   });
+});
+
+describe("Doctor List Item View", function() {
+  beforeEach(function(){
+    this.doctor = new App.Models.Doctor({name: "Dr. Bigham", streetAddress: "333 W. 4th St", city: "New York", state: "NY", zipCode: "11111", imgUrl: "../img.jpg"});
+    this.item = new App.Views.DoctorListItemView({model: this.doctor});
+    this.save_stub = sinon.stub(this.doctor, "save");
+  })
+  afterEach(function() {
+    this.save_stub.restore();
+  })
+  it("render() should return the view object", function() {
+    this.item.render().should.equal(this.item);
   });
+  it("should render as a list item", function() {
+    this.item.render().el.nodeName.should.equal("LI");
+  })
+  describe("Template", function() {
+    beforeEach(function(){
+      this.item.render();
+    })
+    it("should contain the doctor's name as text", function() {
+      this.item.$el.text().should.have.string("Dr. Bigham");
+    })
+  })
+})

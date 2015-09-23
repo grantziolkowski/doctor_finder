@@ -4,7 +4,7 @@ window.App = {
     Views: {}
  }
 
-window.JST = {} //templates
+window.JST = {} //JS templates
 
 $(document).ready(function(){
     window.router = new App.Routers.Index({

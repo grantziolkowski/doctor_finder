@@ -21,14 +21,22 @@ App.Views.DoctorListItemView = Backbone.View.extend({
   events: {
     'click .doctor_img': 'showContactInfo'
   },
+  presenter: function() {
+    var data = this.model.toJSON();
+    var presented = _.extend(data, {
+      phone: data.locations[0].phones.voice[0].number,
+      address: data.locations[0].address,
+      index: this.id + 1
+    });
+    return presented;
+  },
   showContactInfo: function(e) {
     e.preventDefault()
+    var phone = this.presenter().phone
+    this.$el.find(".phone_num").html(phone).hide().fadeIn()
   },
   render: function() {
-    var model = this.model.toJSON()
-    model.index = this.id + 1
-    model.address = model.locations[0].address
-    this.$el.append(this.template(model))
+    this.$el.append(this.template(this.presenter()))
       return this;
   }
 })

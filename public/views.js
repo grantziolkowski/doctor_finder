@@ -1,6 +1,6 @@
 App.Views.DoctorListView = Backbone.View.extend({
   initialize: function() {
-     this.collection.on("change", this.render, this);
+     this.collection.on("reset", this.render, this);
    },
   tagName: "ul",
   render: function() {
@@ -18,9 +18,16 @@ App.Views.DoctorListView = Backbone.View.extend({
 App.Views.DoctorListItemView = Backbone.View.extend({
   tagName: "li",
   template: JST['templates/show'],
+  events: {
+    'click .doctor_img': 'showContactInfo'
+  },
+  showContactInfo: function(e) {
+    e.preventDefault()
+  },
   render: function() {
     var model = this.model.toJSON()
     model.index = this.id + 1
+    model.address = model.locations[0].address
     this.$el.append(this.template(model))
       return this;
   }

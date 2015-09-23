@@ -4,13 +4,13 @@ JST['templates/show'] = _.template(
       <%= index %>.\
     </div>\
     <div class='col-xs-1'>\
-      <img class='img-circle doctor_img' src=<%= imgUrl %>>\
+      <a href='#'><img class='img-circle doctor_img' src=<%= photos[0] %>></a>\
     </div>\
     <div class='col-xs-8'>\
       <ul class='doctor_info'>\
         <li><%= name %></li>\
-        <li><%= streetAddress %></li>\
-        <li><%= city %>, <%= state %> <%= zipCode %></li>\
+        <li><%= address.addr_line1 %></li>\
+        <li><%= address.city %>, <%= address.state_code %> <%= address.postal_code %></li>\
       </ul>\
     </div>\
   </div>"
